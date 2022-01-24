@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "@reach/router";
@@ -20,7 +21,7 @@ const DogDetails = () => {
       setDog(response.data);
     }
     getDogDetails();
-  }, [breedid]);
+  }, []);
 
   if (dog) {
     return (
