@@ -20,7 +20,7 @@ const DogDetails = () => {
       setDog(response.data);
     }
     getDogDetails();
-  }, []);
+  }, [breedid]);
 
   if (dog) {
     return (
